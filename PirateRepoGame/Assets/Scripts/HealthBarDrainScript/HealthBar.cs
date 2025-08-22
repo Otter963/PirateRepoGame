@@ -29,17 +29,6 @@ public class HealthBar : MonoBehaviour
 
     private float currentHealth;
 
-    //put following into player script when able to
-    private void OnEnable()
-    {
-        inputActions.FindActionMap("Player").Enable();
-    }
-
-    private void OnDisable()
-    {
-        inputActions.FindActionMap("Player").Disable();
-    }
-
     private void Awake()
     {
         m_HealthDrainButton = InputSystem.actions.FindAction("HealthDrainDemo");
