@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerShootScript : MonoBehaviour
 {
@@ -11,10 +12,20 @@ public class PlayerShootScript : MonoBehaviour
     public Animator anim;
 
     public string currentType = "arrow";
-     
+
+    [Header("Input Actions")]
+    [SerializeField] private InputActionAsset playerControls;
+
+    private InputAction shootAction;
+
     public void ChangeType(string type)
     {
         currentType = type;
+    }
+
+    private void Awake()
+    {
+        shootAction = playerControls.FindActionMap("Player").FindAction("Shoot");
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,17 +37,17 @@ public class PlayerShootScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (shootAction.WasPressedThisFrame())
         {
-            //Shoot();
+            Shoot();
             ChangeType("arrow");
-            anim.SetTrigger("Attack2");
+            //anim.SetTrigger("Attack2");
         }
         if (Input.GetMouseButtonDown(1))
         {
             //Shoot();
             ChangeType("arrowPoison");
-            anim.SetTrigger("Attack2");
+            //anim.SetTrigger("Attack2");
         }
     }
 
@@ -53,7 +64,7 @@ public class PlayerShootScript : MonoBehaviour
 
         //object pooling way
         GameObject temp = ArrowPooler.Instance.SpawnFromPool(currentType, shootLocation.position,Quaternion.identity);
-        temp.GetComponent<Rigidbody2D>().linearVelocity = new Vector3(arrowSpeed, 0, 0);
+        temp.GetComponent<Rigidbody>().linearVelocity = new Vector3(arrowSpeed, 0, 0);
         temp.GetComponent<ArrowController>().Spawned();
     }
 }

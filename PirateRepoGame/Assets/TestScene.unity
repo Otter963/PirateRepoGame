@@ -5711,7 +5711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -780, y: 295}
+  m_AnchoredPosition: {x: -780, y: 342.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &313873869
@@ -5736,7 +5736,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Use WASD or \nleft stick to move.\n\nUse right bumper or\nright click
     to deplete health.\n\nUse shift or\nclick left stick in to sprint.\n\nUse space
-    or\nX or A to jump."
+    or\nX or A to jump.\n\nUse right trigger or\nLeft click to shoot"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17537,6 +17537,54 @@ MonoBehaviour:
   healthBarTrailingFill: {fileID: 2032011986}
   trailDelay: 0.4
   maxHealth: 100
+--- !u!1 &1277207377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277207379}
+  - component: {fileID: 1277207378}
+  m_Layer: 0
+  m_Name: BulletPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1277207378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277207377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cc60302886a1f41806e59eca52e995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: Bullet
+    prefab: {fileID: 4600849678562639661, guid: 4227a80121ce1a642a455e41fdfd084b, type: 3}
+    size: 10
+--- !u!4 &1277207379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277207377}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 850.5121, y: -325.36755, z: 794.1437}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1314080523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dd3449b2439cb274ca12c61fe40c053d, type: 3}
@@ -18438,6 +18486,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2434066007294159906, guid: dbf07bda7b42ca849ab4996c87b8db88, type: 3}
+      propertyPath: playerControls
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
     - target: {fileID: 4531976021127075040, guid: dbf07bda7b42ca849ab4996c87b8db88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18501,3 +18553,4 @@ SceneRoots:
   - {fileID: 1454420579}
   - {fileID: 252465847}
   - {fileID: 1922931769}
+  - {fileID: 1277207379}

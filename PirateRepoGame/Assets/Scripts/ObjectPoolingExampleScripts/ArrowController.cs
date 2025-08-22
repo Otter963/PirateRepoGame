@@ -18,7 +18,7 @@ public class ArrowController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         this.gameObject.SetActive(false);
-        this.GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
+        this.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
     }
 
     // Update is called once per frame
