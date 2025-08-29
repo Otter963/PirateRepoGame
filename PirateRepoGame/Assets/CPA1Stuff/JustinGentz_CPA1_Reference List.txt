@@ -1,0 +1,26 @@
+﻿Game Studies 3: Reference List CPA1
+Justin Gentz
+
+
+References:
+
+
+Gabriel Aguiar Prod. (2019, May 9). Unity Shader Graph - Fire Shader Tutorial [Video]. YouTube. https://www.youtube.com/watch?v=qlyIOmtrMMQ
+Brackeys. (2019a, March 17). GRASS SWAY in Unity - SHADER GRAPH [Video]. YouTube. https://www.youtube.com/watch?v=L_Bzcw9tqTc
+Sasquatch B Studios. (2025, January 16). You can (FINALLY) Use Shadergraph for UI - Unity Health Bar Tutorial [Video]. YouTube. https://www.youtube.com/watch?v=9loSIyth5aU
+SpeedTutor. (2023, August 19). Creating an FPS controller in unity (Movement, footsteps, jumping) [Video]. YouTube. https://www.youtube.com/watch?v=i_VFMOTfvmA
+SpeedTutor. (2023b, December 16). FPS CONTROLLER using new INPUT System (Unity Tutorial 2023) [Video]. YouTube. https://www.youtube.com/watch?v=b0AQ6IENZFg
+
+
+
+
+Assets:
+
+
+Day Environment HDRI 059 on AmbientCG. (n.d.). Retrieved August 18, 2025, from https://ambientcg.com/view?id=DayEnvironmentHDRI059
+Day Environment HDRI 061 on AmbientCG. (n.d.). Retrieved August 18, 2025, from https://ambientcg.com/view?id=DayEnvironmentHDRI061
+Smoke PNG image with transparent background. (n.d.). pngimg.com. Retrieved August 21, 2025, from https://pngimg.com/image/55220
+ThmsMsqrt. (n.d.). LightingStuff/Assets/Grass Assets at master · ThmsMsqrt/LightingStuff. GitHub. Retrieved August 22, 2025, from https://github.com/ThmsMsqrt/LightingStuff/tree/master/Assets/Grass%20Assets
+DOTween (HOTween v2) | Animation Tools | Unity Asset Store. (2015, January 10). Unity Asset Store. Retrieved August 22, 2025, from https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676?aid=1100lwgBQ
+Stylized Pirate Asset Set - Free Pack | 3D Environments | Unity Asset Store. (2022, March 5). Unity Asset Store. Retrieved August 22, 2025, from https://assetstore.unity.com/packages/3d/environments/stylized-pirate-asset-set-free-pack-195470
+PSX Dungeon Boxes and Barrels Pack by MCSTEEG. (n.d.). itch.io. Retrieved August 22, 2025, from https://mcsteeg.itch.io/psx-dungeon-boxes-and-barrels-pack
