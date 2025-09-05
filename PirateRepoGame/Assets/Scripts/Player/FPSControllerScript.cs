@@ -92,7 +92,6 @@ public class FPSControllerScript : MonoBehaviour
         currentMovement.z = horizontalMovement.z;
 
         characterController.Move(currentMovement * Time.deltaTime);
-        //SoundManager.PlaySound(SoundType.RUN, 0.5f);
     }
 
     void HandleGravityAndJumping()

@@ -5709,10 +5709,13 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4359cf7be0f146043b12e900de802427, type: 3}
     - {fileID: 8300000, guid: 099cbe2a1d8f72943871c0e0d22bc255, type: 3}
   - name: RUN
-    sounds:
-    - {fileID: 0}
-  - name: SHOOT
     sounds: []
+  - name: SHOOT
+    sounds:
+    - {fileID: 8300000, guid: 94644713f7b7a2245a3875565c1679cf, type: 3}
+    - {fileID: 8300000, guid: 0fd8636b6e8955143954a410d9dbc5da, type: 3}
+    - {fileID: 8300000, guid: 1221cfcf93d0e2d4caa1b0cad326fda6, type: 3}
+    - {fileID: 8300000, guid: acc230f1837cdd148aa8c69f38071dcb, type: 3}
   - name: ENEMYHURT
     sounds: []
   - name: PLAYERHURT

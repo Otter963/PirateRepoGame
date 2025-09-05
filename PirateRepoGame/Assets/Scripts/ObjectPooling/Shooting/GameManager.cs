@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         if (bulletRB != null)
         {
             bulletRB.linearVelocity = bullet.transform.forward * bulletSpeed;
+            SoundManager.PlaySound(SoundType.SHOOT, 0.5f);
         }
 
         StartCoroutine(DeactivateBullet(bullet));
