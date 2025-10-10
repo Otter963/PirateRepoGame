@@ -10,7 +10,8 @@ public enum SoundType
     ENEMYDEATH,
     PLAYERHURT,
     TUTORIALSKIP,
-    TUTORIALCONTINUE
+    TUTORIALCONTINUE,
+    GAMEWIN
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
