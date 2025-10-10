@@ -15,9 +15,15 @@ public class NPCInteractableScript : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI dialogueTextTMP;
 
+    [SerializeField] private GameObject tutorialCollider;
+
+    [SerializeField] private GameObject tutorialTriggerCollider;
+
     public void Interact()
     {
-        Debug.Log("Interacted with " + interactScript.npcName);
+        SoundManager.PlaySound(SoundType.TUTORIALCONTINUE, 1f);
+        tutorialCollider.SetActive(false);
+        tutorialTriggerCollider.SetActive(false);
     }
 
     public string GetInteractText()

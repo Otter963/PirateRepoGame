@@ -10,10 +10,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private InputActionAsset playerControls;
 
+    [SerializeField] private Animator playerAnimator;
+
     private void Update()
     {
         if (playerControls.FindAction("Shoot").WasPressedThisFrame())
         {
+            playerAnimator.SetTrigger("Shoot");
             Shoot();
         }
     }

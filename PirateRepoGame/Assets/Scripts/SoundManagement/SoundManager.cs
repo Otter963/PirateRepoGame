@@ -7,7 +7,10 @@ public enum SoundType
     RUN,
     SHOOT,
     ENEMYHURT,
-    PLAYERHURT
+    ENEMYDEATH,
+    PLAYERHURT,
+    TUTORIALSKIP,
+    TUTORIALCONTINUE
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
