@@ -2117,8 +2117,8 @@
     "m_ObjectId": "15153b1509be4afe88ccff8adaac3402",
     "m_Title": "Depth",
     "m_Position": {
-        "x": -2939.999755859375,
-        "y": -569.9999389648438
+        "x": -2940.0,
+        "y": -570.0
     }
 }
 
@@ -3870,8 +3870,8 @@
     "m_ObjectId": "4310912ebb974974901117115ccea888",
     "m_Title": "Shadow or Bottom Colour",
     "m_Position": {
-        "x": -3005.999755859375,
-        "y": 509.99993896484377
+        "x": -3006.0,
+        "y": 510.0
     }
 }
 
@@ -5168,8 +5168,8 @@
     "m_ObjectId": "6b338b4295734fb597c6affc155e4093",
     "m_Title": "GrassSway",
     "m_Position": {
-        "x": -2547.999755859375,
-        "y": -2033.999755859375
+        "x": -2548.0,
+        "y": -2034.0
     }
 }
 
@@ -6342,7 +6342,7 @@
     "m_ObjectId": "867738ccfb19419aa37e2cec4b3bfda8",
     "m_Title": "TerrainColour",
     "m_Position": {
-        "x": -3520.999755859375,
+        "x": -3521.0,
         "y": 65.0
     }
 }
@@ -9554,7 +9554,7 @@
     "m_ObjectId": "deb2c6a0ece64c8f91f41a56778330e4",
     "m_Title": "HeightBlend",
     "m_Position": {
-        "x": -1880.999755859375,
+        "x": -1881.0,
         "y": 1099.0
     }
 }
@@ -10500,8 +10500,8 @@
     "m_ObjectId": "f66e149749aa409085e3e58c9fc09c9a",
     "m_Title": "Wind Noise Texture",
     "m_Position": {
-        "x": -3148.999755859375,
-        "y": -1393.9998779296875
+        "x": -3149.0,
+        "y": -1394.0
     }
 }
 
