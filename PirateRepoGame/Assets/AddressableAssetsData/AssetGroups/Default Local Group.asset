@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: 87d230318641e5945a09c665ac05b4a9
+  m_SerializeEntries:
+  - m_GUID: 585f4c5dad57bbd48ae66374dcaf77e0
+    m_Address: Assets/Prefabs/Grass/TerrainPrefab.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Level
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7d3620a88d246af45a8486805fc1a250, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f7a506dc8f6a3fb45a39b96fe3f3cea5, type: 2}
+    - {fileID: 11400000, guid: d3c4f895b7a864c4f971b566a27cac3b, type: 2}
