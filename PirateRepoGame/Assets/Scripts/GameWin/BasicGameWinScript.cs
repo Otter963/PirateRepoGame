@@ -8,6 +8,10 @@ public class BasicGameWinScript : MonoBehaviour
 
     [SerializeField] private GameObject playerUI;
 
+    [SerializeField] private StopCinemachineTimeline stopCinemachineTimeline;
+
+    public bool finishGame = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -17,6 +21,8 @@ public class BasicGameWinScript : MonoBehaviour
             playerController.enabled = false;
             playerUI.SetActive(false);
             gameWinUI.SetActive(true);
+            finishGame = true;
+            Time.timeScale = 0f;
         }
     }
 }

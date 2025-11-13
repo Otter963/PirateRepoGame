@@ -19,6 +19,8 @@ public class NPCInteractableScript : MonoBehaviour
 
     [SerializeField] private GameObject tutorialTriggerCollider;
 
+    [SerializeField] private GameObject playerControlsTutorial;
+
     public void Interact()
     {
         SoundManager.PlaySound(SoundType.TUTORIALCONTINUE, 1f);
