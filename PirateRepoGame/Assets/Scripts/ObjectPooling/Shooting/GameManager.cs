@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public BulletPool bulletPool;
     public float bulletSpeed = 10f;
+    [SerializeField] private float bulletAliveTime = 0.5f;
 
     [SerializeField] private PauseMenuScript pauseMenuScript;
 
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DeactivateBullet(GameObject bullet)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(bulletAliveTime);
         bulletPool.ReturnObject(bullet);
     }
 }
