@@ -8,16 +8,21 @@ public class GameManager : MonoBehaviour
     public BulletPool bulletPool;
     public float bulletSpeed = 10f;
 
+    [SerializeField] private PauseMenuScript pauseMenuScript;
+
     [SerializeField] private InputActionAsset playerControls;
 
     [SerializeField] private Animator playerAnimator;
 
     private void Update()
     {
-        if (playerControls.FindAction("Shoot").WasPressedThisFrame())
+        if (!pauseMenuScript.isPaused)
         {
-            playerAnimator.SetTrigger("Shoot");
-            Shoot();
+            if (playerControls.FindAction("Shoot").WasPressedThisFrame())
+            {
+                playerAnimator.SetTrigger("Shoot");
+                Shoot();
+            }
         }
     }
 

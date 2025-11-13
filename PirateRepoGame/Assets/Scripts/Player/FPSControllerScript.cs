@@ -19,6 +19,8 @@ public class FPSControllerScript : MonoBehaviour
     [Header("Input Actions")]
     [SerializeField] private InputActionAsset playerControls;
 
+    [SerializeField] private PauseMenuScript pauseMenuScript;
+
     private Camera playerCamera;
 
     private float verticalRotation;
@@ -72,9 +74,21 @@ public class FPSControllerScript : MonoBehaviour
 
     private void Update()
     {
-        HandleMovement();
+        if (!pauseMenuScript.isPaused)
+        {
+            HandleMovement();
 
-        HandleRotation();
+            HandleRotation();
+
+            //for when pause menu is active with cursor
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
     void HandleMovement()

@@ -247,7 +247,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c5022afefc2cdb843b61e848e1731e31, type: 3}
   m_Resource: {fileID: 8300000, guid: c5022afefc2cdb843b61e848e1731e31, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -424,6 +424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPool: {fileID: 2604558289864191877}
   bulletSpeed: 100
+  pauseMenuScript: {fileID: 0}
   playerControls: {fileID: -944628639613478452, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
   playerAnimator: {fileID: 5289416445114502205}
 --- !u!1 &8095369752530614294
@@ -585,6 +586,7 @@ MonoBehaviour:
   mouseSens: 2
   upDownRange: 80
   playerControls: {fileID: -944628639613478452, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
+  pauseMenuScript: {fileID: 0}
 --- !u!114 &6993075226391429378
 MonoBehaviour:
   m_ObjectHideFlags: 0
